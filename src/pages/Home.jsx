@@ -368,9 +368,9 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-7 mb-12">
             {[
-              { title: "Local Business Website", category: "Business Website", gradient: "from-indigo-100 via-purple-50 to-violet-100" },
-              { title: "Portfolio Website", category: "Portfolio", gradient: "from-amber-50 via-yellow-50 to-orange-50" },
-              { title: "Ecommerce Store", category: "Ecommerce", gradient: "from-emerald-50 via-teal-50 to-cyan-50" },
+              { title: "Developer Portfolio", category: "Landing Page", gradient: "from-gray-200 via-slate-100 to-gray-200", liveUrl: "https://codebydeep-co-uk-913554.hostingersite.com/" },
+              { title: "Local Carpet Fitter", category: "Business Website", gradient: "from-amber-50 via-yellow-50 to-orange-50", liveUrl: "https://localcarpetfitter.co.uk/" },
+              { title: "QuickBreak", category: "Web App MVP", gradient: "from-emerald-50 via-teal-50 to-cyan-50", liveUrl: "https://quick-break-backend.onrender.com/" },
             ].map((p, i) => (
               <div key={i} className="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover shadow-sm">
                 <div className={`h-52 bg-gradient-to-br ${p.gradient} flex flex-col items-center justify-center gap-3`}>
@@ -389,12 +389,23 @@ export default function Home() {
                   >
                     {p.title}
                   </h3>
-                  <Link
-                    to="/portfolio"
-                    className="text-sm font-semibold text-[#4F46E5] border border-indigo-200 hover:bg-indigo-50 px-4 py-2 rounded-lg transition-colors inline-block"
-                  >
-                    View Project →
-                  </Link>
+                  {p.liveUrl ? (
+                    <a
+                      href={p.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm font-semibold bg-[#25D366] hover:bg-[#1fb855] text-white px-4 py-2 rounded-lg transition-colors inline-block"
+                    >
+                      View Live ↗
+                    </a>
+                  ) : (
+                    <Link
+                      to="/portfolio"
+                      className="text-sm font-semibold text-[#4F46E5] border border-indigo-200 hover:bg-indigo-50 px-4 py-2 rounded-lg transition-colors inline-block"
+                    >
+                      View Project →
+                    </Link>
+                  )}
                 </div>
               </div>
             ))}
