@@ -113,13 +113,13 @@ export default function ServicesPage() {
                 <p className="section-label mb-2">{s.subtitle}</p>
                 <h2 className="heading-md mb-2">{s.title}</h2>
                 <div className="accent-line" />
-                <p className="font-black text-xl text-[#111111] mb-1" style={{ fontFamily: "'Poppins', sans-serif" }}>{s.price}</p>
+                <p className="font-black text-xl text-[#111111] mb-1" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{s.price}</p>
                 <p className="text-sm text-gray-400 mb-4">⏱ Typical timeline: {s.timeline}</p>
                 <p className="body-lg mb-6">{s.description}</p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
                   <div>
-                    <p className="text-sm font-semibold text-[#111111] uppercase tracking-wider mb-3" style={{ fontFamily: "'Poppins', sans-serif" }}>Features Include:</p>
+                    <p className="text-sm font-semibold text-[#111111] uppercase tracking-wider mb-3" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>Features Include:</p>
                     <ul className="space-y-2">
                       {s.features.map((f, fi) => (
                         <li key={fi} className="flex items-start gap-2"><Check /><span className="body-md">{f}</span></li>
@@ -127,7 +127,7 @@ export default function ServicesPage() {
                     </ul>
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-[#111111] uppercase tracking-wider mb-3" style={{ fontFamily: "'Poppins', sans-serif" }}>Best For:</p>
+                    <p className="text-sm font-semibold text-[#111111] uppercase tracking-wider mb-3" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>Best For:</p>
                     <ul className="space-y-2">
                       {s.bestFor.map((b, bi) => (
                         <li key={bi} className="flex items-start gap-2">
@@ -159,7 +159,7 @@ export default function ServicesPage() {
             {process.map((p, i) => (
               <StaggerItem key={i}>
               <div className="bg-white rounded-2xl p-6 border border-gray-100 card-hover">
-                <p className="font-black text-4xl mb-3" style={{ color: "#1B256320", fontFamily: "'Poppins', sans-serif" }}>{p.step}</p>
+                <p className="font-black text-4xl mb-3" style={{ color: "#1B256320", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{p.step}</p>
                 <h3 className="heading-md !text-lg mb-2">{p.title}</h3>
                 <p className="body-md">{p.desc}</p>
               </div>
@@ -181,7 +181,7 @@ export default function ServicesPage() {
             {techStack.map((t, i) => (
               <div key={i} className="rounded-xl p-5 text-center border border-gray-100 hover:border-[#4F46E5]/30 hover:shadow-sm transition-all"
                 style={{ background: "linear-gradient(180deg, #fafafa, #f0edff)" }}>
-                <p className="font-semibold text-base text-[#111111] mb-1" style={{ fontFamily: "'Poppins', sans-serif" }}>{t.name}</p>
+                <p className="font-semibold text-base text-[#111111] mb-1" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{t.name}</p>
                 <p className="body-md text-sm">{t.desc}</p>
               </div>
             ))}

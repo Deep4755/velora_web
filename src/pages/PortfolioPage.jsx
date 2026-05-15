@@ -7,18 +7,18 @@ const filters = ["All", "Landing Pages", "Business Websites", "Ecommerce"];
 const tagMap = { All: null, "Landing Pages": "landing", "Business Websites": "business", Ecommerce: "ecommerce" };
 
 const allProjects = [
-  { id: 1, title: "Fashion Boutique", category: "Ecommerce", tag: "ecommerce", gradient: "from-rose-50 to-pink-100" },
-  { id: 2, title: "Restaurant Website", category: "Business Website", tag: "business", gradient: "from-amber-50 to-orange-100" },
-  { id: 3, title: "SaaS Landing Page", category: "Landing Page", tag: "landing", gradient: "from-blue-50 to-indigo-100" },
-  { id: 4, title: "Fitness Studio", category: "Business Website", tag: "business", gradient: "from-emerald-50 to-teal-100" },
-  { id: 5, title: "Product Launch", category: "Landing Page", tag: "landing", gradient: "from-sky-50 to-cyan-100" },
-  { id: 6, title: "Coffee Shop Store", category: "Ecommerce", tag: "ecommerce", gradient: "from-orange-50 to-amber-100" },
-  { id: 7, title: "Yoga Studio", category: "Business Website", tag: "business", gradient: "from-purple-50 to-violet-100" },
-  { id: 8, title: "Tech Startup", category: "Landing Page", tag: "landing", gradient: "from-cyan-50 to-sky-100" },
-  { id: 9, title: "Jewellery Store", category: "Ecommerce", tag: "ecommerce", gradient: "from-pink-50 to-rose-100" },
-  { id: 10, title: "Law Firm", category: "Business Website", tag: "business", gradient: "from-slate-50 to-gray-100" },
-  { id: 11, title: "App Launch", category: "Landing Page", tag: "landing", gradient: "from-violet-50 to-purple-100" },
-  { id: 12, title: "Pet Shop", category: "Ecommerce", tag: "ecommerce", gradient: "from-lime-50 to-green-100" },
+  { id: 1, title: "Simply Carpet Fitters", category: "Business Website", tag: "business", gradient: "from-amber-50 to-orange-100", liveUrl: "https://codebydeep-co-uk-913554.hostingersite.com/" },
+  { id: 2, title: "Fashion Boutique", category: "Ecommerce", tag: "ecommerce", gradient: "from-rose-50 to-pink-100", liveUrl: null },
+  { id: 3, title: "SaaS Landing Page", category: "Landing Page", tag: "landing", gradient: "from-blue-50 to-indigo-100", liveUrl: null },
+  { id: 4, title: "Fitness Studio", category: "Business Website", tag: "business", gradient: "from-emerald-50 to-teal-100", liveUrl: null },
+  { id: 5, title: "Product Launch", category: "Landing Page", tag: "landing", gradient: "from-sky-50 to-cyan-100", liveUrl: null },
+  { id: 6, title: "Coffee Shop Store", category: "Ecommerce", tag: "ecommerce", gradient: "from-orange-50 to-amber-100", liveUrl: null },
+  { id: 7, title: "Yoga Studio", category: "Business Website", tag: "business", gradient: "from-purple-50 to-violet-100", liveUrl: null },
+  { id: 8, title: "Tech Startup", category: "Landing Page", tag: "landing", gradient: "from-cyan-50 to-sky-100", liveUrl: null },
+  { id: 9, title: "Jewellery Store", category: "Ecommerce", tag: "ecommerce", gradient: "from-pink-50 to-rose-100", liveUrl: null },
+  { id: 10, title: "Law Firm", category: "Business Website", tag: "business", gradient: "from-slate-50 to-gray-100", liveUrl: null },
+  { id: 11, title: "App Launch", category: "Landing Page", tag: "landing", gradient: "from-violet-50 to-purple-100", liveUrl: null },
+  { id: 12, title: "Pet Shop", category: "Ecommerce", tag: "ecommerce", gradient: "from-lime-50 to-green-100", liveUrl: null },
 ];
 
 const caseStudies = [
@@ -75,7 +75,7 @@ export default function PortfolioPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {stats.map((s, i) => (
               <div key={i} className="py-2">
-                <p className="font-black text-4xl mb-1 text-gradient-gold" style={{ fontFamily: "'Poppins', sans-serif" }}>{s.value}</p>
+                <p className="font-black text-4xl mb-1 text-gradient-gold" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{s.value}</p>
                 <p className="text-white/50 text-sm uppercase tracking-wider">{s.label}</p>
               </div>
             ))}
@@ -100,8 +100,8 @@ export default function PortfolioPage() {
                 className="text-sm font-semibold px-5 py-2.5 rounded-xl border-2 transition-all"
                 style={
                   activeFilter === f
-                    ? { backgroundColor: "#1B2563", color: "white", borderColor: "#1B2563", fontFamily: "'Poppins', sans-serif" }
-                    : { backgroundColor: "white", color: "#111111", borderColor: "#e5e7eb", fontFamily: "'Poppins', sans-serif" }
+                    ? { backgroundColor: "#1B2563", color: "white", borderColor: "#1B2563", fontFamily: "'Plus Jakarta Sans', sans-serif" }
+                    : { backgroundColor: "white", color: "#111111", borderColor: "#e5e7eb", fontFamily: "'Plus Jakarta Sans', sans-serif" }
                 }
                 onMouseEnter={e => { if (activeFilter !== f) { e.currentTarget.style.borderColor = "#4F46E5"; e.currentTarget.style.color = "#4F46E5"; } }}
                 onMouseLeave={e => { if (activeFilter !== f) { e.currentTarget.style.borderColor = "#e5e7eb"; e.currentTarget.style.color = "#1B2563"; } }}
@@ -125,14 +125,27 @@ export default function PortfolioPage() {
                 </div>
                 <div className="p-6">
                   <p className="text-[#C9A84C] text-xs font-bold mb-1.5 uppercase tracking-wider">{project.category}</p>
-                  <h3 className="font-semibold text-base text-[#111111] mb-4" style={{ fontFamily: "'Poppins', sans-serif" }}>{project.title}</h3>
-                  <Link
-                    to="/contact"
-                    className="text-sm font-semibold border-2 border-[#1B2563] text-[#111111] hover:bg-[#1B2563] hover:text-white px-4 py-2 rounded-lg transition-colors inline-block"
-                    style={{ fontFamily: "'Poppins', sans-serif" }}
-                  >
-                    View Project →
-                  </Link>
+                  <h3 className="font-semibold text-base text-[#111111] mb-4" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{project.title}</h3>
+                  <div className="flex flex-wrap gap-2">
+                    <Link
+                      to="/contact"
+                      className="text-sm font-semibold border-2 border-[#111111] text-[#111111] hover:bg-[#111111] hover:text-white px-4 py-2 rounded-lg transition-colors inline-block"
+                      style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+                    >
+                      View Project →
+                    </Link>
+                    {project.liveUrl && (
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-semibold bg-[#25D366] hover:bg-[#1fb855] text-white px-4 py-2 rounded-lg transition-colors inline-block"
+                        style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+                      >
+                        View Live ↗
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
               </StaggerItem>
@@ -157,7 +170,7 @@ export default function PortfolioPage() {
                     {cs.icon}
                   </div>
                   <div className="p-7 flex-1">
-                    <h3 className="font-semibold text-lg text-[#111111] mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>{cs.title}</h3>
+                    <h3 className="font-semibold text-lg text-[#111111] mb-2" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{cs.title}</h3>
                     <span
                       className="inline-block text-[#111111] text-xs font-bold px-4 py-1.5 rounded-full mb-5"
                       style={{ background: "linear-gradient(135deg, #C9A84C, #E8C96A)" }}
@@ -166,11 +179,11 @@ export default function PortfolioPage() {
                     </span>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                       <div>
-                        <p className="text-sm font-semibold text-[#111111] uppercase tracking-wider mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>The Challenge</p>
+                        <p className="text-sm font-semibold text-[#111111] uppercase tracking-wider mb-2" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>The Challenge</p>
                         <p className="body-md">{cs.challenge}</p>
                       </div>
                       <div>
-                        <p className="text-sm font-semibold text-[#111111] uppercase tracking-wider mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>Our Solution</p>
+                        <p className="text-sm font-semibold text-[#111111] uppercase tracking-wider mb-2" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>Our Solution</p>
                         <p className="body-md">{cs.solution}</p>
                       </div>
                     </div>
@@ -204,7 +217,7 @@ export default function PortfolioPage() {
                     {t.name[0]}
                   </div>
                   <div>
-                    <p className="font-semibold text-base text-[#111111]" style={{ fontFamily: "'Poppins', sans-serif" }}>{t.name}</p>
+                    <p className="font-semibold text-base text-[#111111]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{t.name}</p>
                     <p className="text-sm text-gray-400">{t.role}</p>
                   </div>
                 </div>

@@ -19,7 +19,7 @@ body {
 
 /* Headings use Poppins — deep navy-purple, never black */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif;
   line-height: 1.25;
   color: #111111;
 }
@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary {
   background: linear-gradient(135deg, #C9A84C 0%, #E8C96A 100%);
   color: #111111;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 600;
   font-size: 1rem;
   padding: 0.8rem 2rem;
@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-secondary {
   background: linear-gradient(135deg, #4F46E5 0%, #6366f1 100%);
   color: #ffffff;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 600;
   font-size: 1rem;
   padding: 0.8rem 2rem;
@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-outline-white {
   border: 2px solid rgba(255,255,255,0.7);
   color: #ffffff;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 600;
   font-size: 1rem;
   padding: 0.8rem 2rem;
@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-outline-navy {
   border: 2px solid #1B2D63;
   color: #1B2D63;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 600;
   font-size: 1rem;
   padding: 0.8rem 2rem;
@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-gold {
   background: linear-gradient(135deg, #C9A84C 0%, #E8C96A 100%);
   color: #111111;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 600;
   font-size: 1rem;
   padding: 0.8rem 2rem;
@@ -127,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-purple {
   background: linear-gradient(135deg, #4F46E5 0%, #6366f1 100%);
   color: #ffffff;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 600;
   font-size: 1rem;
   padding: 0.8rem 2rem;
@@ -145,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-outline-dark {
   border: 2px solid #1B2D63;
   color: #1B2D63;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 600;
   font-size: 1rem;
   padding: 0.8rem 2rem;
@@ -162,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
    SECTION LABEL (small uppercase tag)
 ───────────────────────────────────────── */
 .section-label {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 1.125rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -269,7 +269,7 @@ h1, h2, h3, h4, h5, h6 {
    TYPOGRAPHY HELPERS
 ───────────────────────────────────────── */
 .heading-xl {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: clamp(2rem, 4.5vw, 3.25rem);
   font-weight: 800;
   line-height: 1.15;
@@ -277,7 +277,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .heading-lg {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: clamp(2rem, 4.5vw, 3rem);
   font-weight: 800;
   line-height: 1.15;
@@ -285,7 +285,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .heading-md {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: clamp(1.375rem, 3vw, 2rem);
   font-weight: 700;
   line-height: 1.25;

@@ -75,7 +75,7 @@ export default function FAQSection({ faqs = defaultFaqs, light = false }) {
                         ? "text-[#4F46E5]"
                         : "text-[#111111] group-hover:text-[#4F46E5]"
                     }`}
-                    style={{ fontFamily: "'Poppins', sans-serif" }}
+                    style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
                   >
                     {faq.q}
                   </span>

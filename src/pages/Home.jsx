@@ -35,7 +35,7 @@ function HeroForm() {
         <div className="w-2.5 h-2.5 rounded-full bg-[#C9A84C]" />
         <h3
           className="text-[#111111] font-bold text-xl"
-          style={{ fontFamily: "'Poppins', sans-serif" }}
+          style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
         >
           GET IN TOUCH
         </h3>
@@ -50,7 +50,7 @@ function HeroForm() {
           >
             ✅
           </div>
-          <p className="text-[#111111] font-bold text-lg mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
+          <p className="text-[#111111] font-bold text-lg mb-2" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
             Thank you!
           </p>
           <p className="text-gray-500 text-base">We will contact you soon.</p>
@@ -217,7 +217,7 @@ export default function Home() {
               <div key={i} className="py-2">
                 <p
                   className="font-black text-4xl mb-1 text-gradient-gold"
-                  style={{ fontFamily: "'Poppins', sans-serif" }}
+                  style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
                 >
                   {s.value}
                 </p>
@@ -277,7 +277,7 @@ export default function Home() {
                   <div>
                     <h3
                       className="font-semibold text-base text-[#111111] mb-1.5"
-                      style={{ fontFamily: "'Poppins', sans-serif" }}
+                      style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
                     >
                       {c.title}
                     </h3>
@@ -328,14 +328,14 @@ export default function Home() {
                 </div>
                 <h3
                   className="font-semibold text-lg text-[#111111] mb-2"
-                  style={{ fontFamily: "'Poppins', sans-serif" }}
+                  style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
                 >
                   {s.title}
                 </h3>
                 <p className="body-md mb-4">{s.desc}</p>
                 <p
                   className="font-bold text-base mb-4"
-                  style={{ color: "#1B2D63", fontFamily: "'Poppins', sans-serif" }}
+                  style={{ color: "#1B2D63", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
                 >
                   {s.price}
                 </p>
@@ -385,7 +385,7 @@ export default function Home() {
                   <p className="text-[#C9A84C] text-xs font-bold mb-1.5 uppercase tracking-wider">{p.category}</p>
                   <h3
                     className="font-semibold text-base text-[#111111] mb-4"
-                    style={{ fontFamily: "'Poppins', sans-serif" }}
+                    style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
                   >
                     {p.title}
                   </h3>
@@ -436,20 +436,20 @@ export default function Home() {
                 {p.popular && (
                   <span
                     className="absolute -top-4 left-1/2 -translate-x-1/2 text-white text-xs font-bold px-5 py-1.5 rounded-full"
-                    style={{ background: "linear-gradient(135deg, #4F46E5, #C9A84C)", fontFamily: "'Poppins', sans-serif" }}
+                    style={{ background: "linear-gradient(135deg, #4F46E5, #C9A84C)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
                   >
                     POPULAR
                   </span>
                 )}
                 <p
                   className={`font-semibold text-base mb-2 ${p.popular ? "text-white/70" : "text-[#111111]"}`}
-                  style={{ fontFamily: "'Poppins', sans-serif" }}
+                  style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
                 >
                   {p.name}
                 </p>
                 <p
                   className={`font-black text-2xl mb-2 ${p.popular ? "text-gradient-gold" : ""}`}
-                  style={!p.popular ? { color: "#1B2D63", fontFamily: "'Poppins', sans-serif" } : { fontFamily: "'Poppins', sans-serif" }}
+                  style={!p.popular ? { color: "#1B2D63", fontFamily: "'Plus Jakarta Sans', sans-serif" } : { fontFamily: "'Plus Jakarta Sans', sans-serif" }}
                 >
                   {p.price}
                 </p>
@@ -512,7 +512,7 @@ export default function Home() {
                   <div>
                     <p
                       className="font-semibold text-base text-[#111111]"
-                      style={{ fontFamily: "'Poppins', sans-serif" }}
+                      style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
                     >
                       {t.name}
                     </p>

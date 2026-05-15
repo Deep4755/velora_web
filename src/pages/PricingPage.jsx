@@ -57,7 +57,7 @@ export default function PricingPage() {
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                     <span
                       className="text-white text-xs font-bold px-5 py-1.5 rounded-full"
-                      style={{ background: "linear-gradient(135deg, #4F46E5, #C9A84C)", fontFamily: "'Poppins', sans-serif" }}
+                      style={{ background: "linear-gradient(135deg, #4F46E5, #C9A84C)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
                     >
                       POPULAR
                     </span>
@@ -65,13 +65,13 @@ export default function PricingPage() {
                 )}
                 <h3
                   className={`font-semibold text-xl mb-2 ${plan.popular ? "text-white" : "text-[#111111]"}`}
-                  style={{ fontFamily: "'Poppins', sans-serif" }}
+                  style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
                 >
                   {plan.name}
                 </h3>
                 <p
                   className="font-black text-4xl mb-2"
-                  style={{ color: plan.popular ? "#C9A84C" : "#1B2563", fontFamily: "'Poppins', sans-serif" }}
+                  style={{ color: plan.popular ? "#C9A84C" : "#1B2563", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
                 >
                   {plan.price}
                 </p>
@@ -92,7 +92,7 @@ export default function PricingPage() {
                       ? "border-[#C9A84C] text-[#C9A84C] hover:bg-[#C9A84C] hover:text-[#111111]"
                       : "border-[#4F46E5] text-[#4F46E5] hover:bg-[#4F46E5] hover:text-white"
                   }`}
-                  style={{ fontFamily: "'Poppins', sans-serif" }}
+                  style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
                 >
                   {plan.cta}
                 </Link>
@@ -113,10 +113,10 @@ export default function PricingPage() {
           </div>
           <div className="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
             <div className="grid grid-cols-4" style={{ background: "linear-gradient(135deg, #1B2563, #2d3a8c)" }}>
-              <div className="p-4 text-sm font-semibold text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>Feature</div>
-              <div className="p-4 text-sm font-semibold text-white text-center" style={{ fontFamily: "'Poppins', sans-serif" }}>Landing Page</div>
-              <div className="p-4 text-sm font-semibold text-center" style={{ background: "linear-gradient(135deg, #C9A84C, #E8C96A)", color: "#111111", fontFamily: "'Poppins', sans-serif" }}>Business</div>
-              <div className="p-4 text-sm font-semibold text-white text-center" style={{ fontFamily: "'Poppins', sans-serif" }}>Ecommerce</div>
+              <div className="p-4 text-sm font-semibold text-white" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>Feature</div>
+              <div className="p-4 text-sm font-semibold text-white text-center" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>Landing Page</div>
+              <div className="p-4 text-sm font-semibold text-center" style={{ background: "linear-gradient(135deg, #C9A84C, #E8C96A)", color: "#111111", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>Business</div>
+              <div className="p-4 text-sm font-semibold text-white text-center" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>Ecommerce</div>
             </div>
             {comparisons.map((row, i) => (
               <div key={i} className={`grid grid-cols-4 border-t border-gray-100 ${i % 2 === 0 ? "bg-white" : "bg-indigo-50/20"}`}>
@@ -143,10 +143,10 @@ export default function PricingPage() {
               <div key={i} className="rounded-2xl px-6 py-5 flex items-center justify-between border border-gray-100 hover:border-[#4F46E5]/30 transition-colors card-hover"
                 style={{ background: "linear-gradient(180deg, #fafafa, #f0edff)" }}>
                 <div>
-                  <p className="font-semibold text-base text-[#111111] mb-0.5" style={{ fontFamily: "'Poppins', sans-serif" }}>{a.name}</p>
+                  <p className="font-semibold text-base text-[#111111] mb-0.5" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{a.name}</p>
                   <p className="body-md text-sm">{a.description}</p>
                 </div>
-                <span className="font-black text-xl text-[#111111] ml-4 whitespace-nowrap" style={{ fontFamily: "'Poppins', sans-serif" }}>{a.price}</span>
+                <span className="font-black text-xl text-[#111111] ml-4 whitespace-nowrap" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{a.price}</span>
               </div>
             ))}
           </div>
@@ -171,11 +171,11 @@ export default function PricingPage() {
               <div key={step.num} className="flex flex-col items-center gap-3">
                 <div
                   className="w-16 h-16 rounded-full flex items-center justify-center font-black text-2xl shadow-lg text-[#111111]"
-                  style={{ background: "linear-gradient(135deg, #C9A84C, #E8C96A)", fontFamily: "'Poppins', sans-serif" }}
+                  style={{ background: "linear-gradient(135deg, #C9A84C, #E8C96A)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
                 >
                   {step.num}
                 </div>
-                <p className="font-semibold text-base text-[#111111]" style={{ fontFamily: "'Poppins', sans-serif" }}>{step.label}</p>
+                <p className="font-semibold text-base text-[#111111]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{step.label}</p>
                 <p className="body-md text-sm">{step.desc}</p>
               </div>
             ))}

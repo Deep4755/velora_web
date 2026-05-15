@@ -40,7 +40,7 @@ export default function Navbar() {
             <div className="flex flex-col leading-tight">
               <span
                 className="font-black text-[#111111] text-xl tracking-wide"
-                style={{ fontFamily: "'Poppins', sans-serif" }}
+                style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
               >
                 AGENCY
               </span>
