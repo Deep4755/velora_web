@@ -1,0 +1,377 @@
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────
+   BASE
+───────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  background-color: #ffffff;
+  color: #1B2563;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Headings use Poppins — deep navy-purple, never black */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.25;
+  color: #1B2563;
+}
+
+/* ─────────────────────────────────────────
+   COLOUR TOKENS
+   Navy:   #1B2D63  (dark, readable on white)
+   Purple: #4F46E5  (soft professional accent)
+   Gold:   #C9A84C  (premium accent — buttons/highlights only)
+   Gold2:  #E8C96A  (lighter gold for gradients)
+───────────────────────────────────────── */
+
+/* ─────────────────────────────────────────
+   BUTTONS
+───────────────────────────────────────── */
+.btn-primary {
+  background: linear-gradient(135deg, #C9A84C 0%, #E8C96A 100%);
+  color: #1B2563;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
+  border-radius: 0.625rem;
+  transition: all 0.25s ease;
+  display: inline-block;
+  box-shadow: 0 4px 16px rgba(201,168,76,0.30);
+  letter-spacing: 0.01em;
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, #b8943e 0%, #d4b558 100%);
+  box-shadow: 0 6px 24px rgba(201,168,76,0.45);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, #4F46E5 0%, #6366f1 100%);
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
+  border-radius: 0.625rem;
+  transition: all 0.25s ease;
+  display: inline-block;
+  box-shadow: 0 4px 16px rgba(79,70,229,0.30);
+}
+.btn-secondary:hover {
+  background: linear-gradient(135deg, #4338ca 0%, #4f46e5 100%);
+  box-shadow: 0 6px 24px rgba(79,70,229,0.45);
+  transform: translateY(-2px);
+}
+
+.btn-outline-white {
+  border: 2px solid rgba(255,255,255,0.7);
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
+  border-radius: 0.625rem;
+  transition: all 0.25s ease;
+  display: inline-block;
+}
+.btn-outline-white:hover {
+  background-color: rgba(255,255,255,0.15);
+  border-color: #ffffff;
+}
+
+.btn-outline-navy {
+  border: 2px solid #1B2D63;
+  color: #1B2D63;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
+  border-radius: 0.625rem;
+  transition: all 0.25s ease;
+  display: inline-block;
+}
+.btn-outline-navy:hover {
+  background-color: #1B2D63;
+  color: #ffffff;
+}
+
+/* Legacy aliases so existing code still works */
+.btn-gold {
+  background: linear-gradient(135deg, #C9A84C 0%, #E8C96A 100%);
+  color: #1B2563;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
+  border-radius: 0.625rem;
+  transition: all 0.25s ease;
+  display: inline-block;
+  box-shadow: 0 4px 16px rgba(201,168,76,0.30);
+  letter-spacing: 0.01em;
+}
+.btn-gold:hover {
+  background: linear-gradient(135deg, #b8943e 0%, #d4b558 100%);
+  box-shadow: 0 6px 24px rgba(201,168,76,0.45);
+  transform: translateY(-2px);
+}
+
+.btn-purple {
+  background: linear-gradient(135deg, #4F46E5 0%, #6366f1 100%);
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
+  border-radius: 0.625rem;
+  transition: all 0.25s ease;
+  display: inline-block;
+  box-shadow: 0 4px 16px rgba(79,70,229,0.30);
+}
+.btn-purple:hover {
+  background: linear-gradient(135deg, #4338ca 0%, #4f46e5 100%);
+  box-shadow: 0 6px 24px rgba(79,70,229,0.45);
+  transform: translateY(-2px);
+}
+
+.btn-outline-dark {
+  border: 2px solid #1B2D63;
+  color: #1B2D63;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
+  border-radius: 0.625rem;
+  transition: all 0.25s ease;
+  display: inline-block;
+}
+.btn-outline-dark:hover {
+  background-color: #1B2D63;
+  color: #ffffff;
+}
+
+/* ─────────────────────────────────────────
+   SECTION LABEL (small uppercase tag)
+───────────────────────────────────────── */
+.section-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #4F46E5;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+/* ─────────────────────────────────────────
+   ACCENT LINE
+───────────────────────────────────────── */
+.accent-line {
+  width: 3.5rem;
+  height: 3px;
+  background: linear-gradient(90deg, #C9A84C, #E8C96A);
+  border-radius: 9999px;
+  margin-bottom: 1.5rem;
+}
+
+/* ─────────────────────────────────────────
+   CARD HOVER
+───────────────────────────────────────── */
+.card-hover {
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+.card-hover:hover {
+  box-shadow: 0 16px 48px rgba(79,70,229,0.12);
+  transform: translateY(-4px);
+}
+
+/* ─────────────────────────────────────────
+   INPUT FIELDS
+───────────────────────────────────────── */
+.input-field {
+  width: 100%;
+  border: 1.5px solid #D1D5DB;
+  border-radius: 0.625rem;
+  padding: 0.875rem 1.125rem;
+  font-size: 0.9375rem;
+  font-family: 'Inter', sans-serif;
+  color: #1B2563;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.input-field:focus {
+  border-color: #4F46E5;
+  box-shadow: 0 0 0 3px rgba(79,70,229,0.12);
+}
+.input-field::placeholder {
+  color: #6B7280;
+  font-size: 0.9rem;
+}
+
+/* ─────────────────────────────────────────
+   GRADIENT TEXT
+───────────────────────────────────────── */
+.text-gradient-gold {
+  background: linear-gradient(135deg, #C9A84C 0%, #E8C96A 60%, #C9A84C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-purple {
+  background: linear-gradient(135deg, #4F46E5 0%, #818cf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─────────────────────────────────────────
+   DARK SECTION BACKGROUNDS
+───────────────────────────────────────── */
+.hero-bg {
+  background: linear-gradient(135deg, #1B2563 0%, #121845 50%, #0e1340 100%);
+}
+
+.section-dark {
+  background: linear-gradient(135deg, #1B2563 0%, #121845 100%);
+}
+
+/* ─────────────────────────────────────────
+   GLOW EFFECTS
+───────────────────────────────────────── */
+.purple-glow {
+  box-shadow: 0 0 60px rgba(79,70,229,0.12), 0 0 120px rgba(79,70,229,0.06);
+}
+
+/* ─────────────────────────────────────────
+   FAQ ACCORDION
+───────────────────────────────────────── */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.25s ease;
+}
+.faq-answer.open {
+  max-height: 300px;
+}
+
+/* ─────────────────────────────────────────
+   TYPOGRAPHY HELPERS
+───────────────────────────────────────── */
+.heading-xl {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: #ffffff;
+}
+
+.heading-lg {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: #1B2563;
+}
+
+.heading-md {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.375rem, 3vw, 2rem);
+  font-weight: 700;
+  line-height: 1.25;
+  color: #1B2563;
+}
+
+.body-lg {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: #4B5563;
+}
+
+.body-md {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: #6B7280;
+}
+
+/* ─────────────────────────────────────────
+   SECTION SPACING
+───────────────────────────────────────── */
+.section-pad {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (max-width: 768px) {
+  .section-pad {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+}
+
+
+/* ─────────────────────────────────────────
+   RESPONSIVE FIXES
+───────────────────────────────────────── */
+@media (max-width: 640px) {
+  .heading-xl {
+    font-size: 1.875rem;
+    line-height: 1.2;
+  }
+  
+  .heading-lg {
+    font-size: 1.625rem;
+    line-height: 1.2;
+  }
+  
+  .heading-md {
+    font-size: 1.25rem;
+  }
+  
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline-white,
+  .btn-outline-navy,
+  .btn-gold,
+  .btn-purple,
+  .btn-outline-dark {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9375rem;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .section-label {
+    font-size: 0.9375rem;
+  }
+}
+
+/* Prevent horizontal scroll */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Smooth card interactions */
+.card-hover {
+  will-change: transform;
+}
+
+/* Better touch targets on mobile */
+@media (max-width: 768px) {
+  .input-field {
+    padding: 1rem 1.125rem;
+    font-size: 1rem;
+  }
+}
