@@ -62,12 +62,12 @@ export default function Footer() {
                 A
               </div>
               <div className="flex flex-col leading-none">
-                <span className="font-black text-white text-base tracking-widest">AGENCY</span>
-                <span className="text-[10px] text-[#C9A84C] font-semibold tracking-wider">LONDON</span>
+                <span className="font-black text-white text-base tracking-widest">VELORA</span>
+                <span className="text-[10px] text-[#C9A84C] font-semibold tracking-wider">WEB</span>
               </div>
             </Link>
             <p className="text-white/50 text-sm leading-relaxed mb-6">
-              London's trusted digital agency for small businesses. We build websites that look great, load fast, and bring in customers.
+              London's trusted Velora Web for small businesses. We build websites that look great, load fast, and bring in customers.
             </p>
             <div className="flex gap-2.5">
               {socials.map((s) => (
@@ -166,7 +166,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="border-t pt-6 flex flex-col sm:flex-row items-center justify-between gap-3" style={{ borderColor: "rgba(255,255,255,0.08)" }}>
-          <p className="text-white/30 text-xs">© 2026 Digital Agency. All Rights Reserved. London, UK.</p>
+          <p className="text-white/30 text-xs">© 2026 Velora Web. All Rights Reserved. London, UK.</p>
           <div className="flex gap-5">
             <Link to="/privacy" className="text-white/30 hover:text-white/60 text-xs transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="text-white/30 hover:text-white/60 text-xs transition-colors">Terms & Conditions</Link>

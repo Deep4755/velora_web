@@ -17,7 +17,7 @@ const milestones = [
   { year: "2020", title: "Team Expansion", desc: "Brought on our first designer and SEO specialist to serve clients better." },
   { year: "2021", title: "Ecommerce Launch", desc: "Added ecommerce as a core service, helping retailers sell online." },
   { year: "2023", title: "50+ Projects", desc: "Delivered over 50 websites with a 98% client satisfaction rate." },
-  { year: "2026", title: "Growing Strong", desc: "Now a full-service digital agency with a team of 4 specialists." },
+  { year: "2026", title: "Growing Strong", desc: "Now a full-service Velora Web with a team of 4 specialists." },
 ];
 
 const team = [
@@ -37,7 +37,7 @@ export default function AboutPage() {
             <div>
               <p className="section-label mb-4">About Our Agency</p>
               <h1 className="heading-xl mb-4">
-                London's Trusted Digital Agency for Small Businesses
+                London's Trusted Velora Web for Small Businesses
               </h1>
               <div className="accent-line" />
               <p className="text-white/60 text-base leading-relaxed mb-4">
@@ -76,7 +76,7 @@ export default function AboutPage() {
               </h2>
               <div className="accent-line" />
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                We are a small digital agency focused on creating clean, modern and easy-to-use websites for local businesses, startups and personal brands. Our aim is to make the whole process simple: clear planning, honest pricing, responsive design and a website that works smoothly on mobile, tablet and desktop.
+                We are a small Velora Web focused on creating clean, modern and easy-to-use websites for local businesses, startups and personal brands. Our aim is to make the whole process simple: clear planning, honest pricing, responsive design and a website that works smoothly on mobile, tablet and desktop.
               </p>
               <p className="text-gray-600 text-sm leading-relaxed mb-8">
                 Whether you need a landing page, a business website, a portfolio or a small ecommerce store, we build websites that look professional and help customers understand your services quickly.

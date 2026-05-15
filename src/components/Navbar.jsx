@@ -42,13 +42,13 @@ export default function Navbar() {
                 className="font-black text-[#111111] text-xl tracking-wide"
                 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
               >
-                AGENCY
+                VELORA
               </span>
               <span
                 className="text-[11px] text-[#4F46E5] font-semibold tracking-widest uppercase"
                 style={{ fontFamily: "'Inter', sans-serif" }}
               >
-                London
+                Web
               </span>
             </div>
           </Link>

@@ -139,7 +139,7 @@ export default function Home() {
                 }}
               >
                 <span className="w-2 h-2 rounded-full bg-[#C9A84C] animate-pulse" />
-                London Digital Agency
+                London Velora Web
               </motion.div>
 
               <motion.h1
