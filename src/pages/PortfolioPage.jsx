@@ -101,7 +101,7 @@ export default function PortfolioPage() {
                 style={
                   activeFilter === f
                     ? { backgroundColor: "#1B2563", color: "white", borderColor: "#1B2563", fontFamily: "'Poppins', sans-serif" }
-                    : { backgroundColor: "white", color: "#1B2563", borderColor: "#e5e7eb", fontFamily: "'Poppins', sans-serif" }
+                    : { backgroundColor: "white", color: "#111111", borderColor: "#e5e7eb", fontFamily: "'Poppins', sans-serif" }
                 }
                 onMouseEnter={e => { if (activeFilter !== f) { e.currentTarget.style.borderColor = "#4F46E5"; e.currentTarget.style.color = "#4F46E5"; } }}
                 onMouseLeave={e => { if (activeFilter !== f) { e.currentTarget.style.borderColor = "#e5e7eb"; e.currentTarget.style.color = "#1B2563"; } }}
@@ -121,14 +121,14 @@ export default function PortfolioPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
                   </div>
-                  <span className="text-[#1B2563]/30 text-sm font-medium">Project Screenshot</span>
+                  <span className="text-[#111111]/30 text-sm font-medium">Project Screenshot</span>
                 </div>
                 <div className="p-6">
                   <p className="text-[#C9A84C] text-xs font-bold mb-1.5 uppercase tracking-wider">{project.category}</p>
-                  <h3 className="font-semibold text-base text-[#1B2563] mb-4" style={{ fontFamily: "'Poppins', sans-serif" }}>{project.title}</h3>
+                  <h3 className="font-semibold text-base text-[#111111] mb-4" style={{ fontFamily: "'Poppins', sans-serif" }}>{project.title}</h3>
                   <Link
                     to="/contact"
-                    className="text-sm font-semibold border-2 border-[#1B2563] text-[#1B2563] hover:bg-[#1B2563] hover:text-white px-4 py-2 rounded-lg transition-colors inline-block"
+                    className="text-sm font-semibold border-2 border-[#1B2563] text-[#111111] hover:bg-[#1B2563] hover:text-white px-4 py-2 rounded-lg transition-colors inline-block"
                     style={{ fontFamily: "'Poppins', sans-serif" }}
                   >
                     View Project →
@@ -157,20 +157,20 @@ export default function PortfolioPage() {
                     {cs.icon}
                   </div>
                   <div className="p-7 flex-1">
-                    <h3 className="font-semibold text-lg text-[#1B2563] mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>{cs.title}</h3>
+                    <h3 className="font-semibold text-lg text-[#111111] mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>{cs.title}</h3>
                     <span
-                      className="inline-block text-[#1B2563] text-xs font-bold px-4 py-1.5 rounded-full mb-5"
+                      className="inline-block text-[#111111] text-xs font-bold px-4 py-1.5 rounded-full mb-5"
                       style={{ background: "linear-gradient(135deg, #C9A84C, #E8C96A)" }}
                     >
                       📈 {cs.result}
                     </span>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                       <div>
-                        <p className="text-sm font-semibold text-[#1B2563] uppercase tracking-wider mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>The Challenge</p>
+                        <p className="text-sm font-semibold text-[#111111] uppercase tracking-wider mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>The Challenge</p>
                         <p className="body-md">{cs.challenge}</p>
                       </div>
                       <div>
-                        <p className="text-sm font-semibold text-[#1B2563] uppercase tracking-wider mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>Our Solution</p>
+                        <p className="text-sm font-semibold text-[#111111] uppercase tracking-wider mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>Our Solution</p>
                         <p className="body-md">{cs.solution}</p>
                       </div>
                     </div>
@@ -204,7 +204,7 @@ export default function PortfolioPage() {
                     {t.name[0]}
                   </div>
                   <div>
-                    <p className="font-semibold text-base text-[#1B2563]" style={{ fontFamily: "'Poppins', sans-serif" }}>{t.name}</p>
+                    <p className="font-semibold text-base text-[#111111]" style={{ fontFamily: "'Poppins', sans-serif" }}>{t.name}</p>
                     <p className="text-sm text-gray-400">{t.role}</p>
                   </div>
                 </div>

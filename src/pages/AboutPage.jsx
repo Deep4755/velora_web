@@ -71,7 +71,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
             <div>
               <span className="section-label">About Our Agency</span>
-              <h2 className="text-3xl sm:text-4xl font-bold text-[#1B2563] mb-3">
+              <h2 className="text-3xl sm:text-4xl font-bold text-[#111111] mb-3">
                 We help small businesses build a professional online presence without making the process complicated.
               </h2>
               <div className="accent-line" />
@@ -96,7 +96,7 @@ export default function AboutPage() {
                     {c.icon}
                   </div>
                   <div>
-                    <h3 className="font-bold text-sm text-[#1B2563] mb-1">{c.title}</h3>
+                    <h3 className="font-bold text-sm text-[#111111] mb-1">{c.title}</h3>
                     <p className="text-gray-500 text-xs leading-relaxed">{c.desc}</p>
                   </div>
                 </div>
@@ -111,7 +111,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="section-label">What We Stand For</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#1B2563] mb-3">Our Values</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#111111] mb-3">Our Values</h2>
             <div className="accent-line mx-auto" />
           </div>
           <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -123,7 +123,7 @@ export default function AboutPage() {
                   style={{ background: "linear-gradient(135deg, rgba(201,168,76,0.15), rgba(155,81,224,0.15))" }}>
                   {v.icon}
                 </div>
-                <h3 className="font-bold text-sm text-[#1B2563] mb-2">{v.title}</h3>
+                <h3 className="font-bold text-sm text-[#111111] mb-2">{v.title}</h3>
                 <p className="text-gray-500 text-xs leading-relaxed">{v.desc}</p>
               </div>
               </StaggerItem>
@@ -137,14 +137,14 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="section-label">Our Journey</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#1B2563] mb-3">How We Got Here</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#111111] mb-3">How We Got Here</h2>
             <div className="accent-line mx-auto" />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {milestones.map((m, i) => (
               <div key={i} className="bg-white rounded-xl p-6 border border-gray-100 card-hover">
                 <p className="font-black text-2xl text-[#C9A84C] mb-2">{m.year}</p>
-                <h3 className="font-bold text-sm text-[#1B2563] mb-2">{m.title}</h3>
+                <h3 className="font-bold text-sm text-[#111111] mb-2">{m.title}</h3>
                 <p className="text-gray-500 text-xs leading-relaxed">{m.desc}</p>
               </div>
             ))}
@@ -157,7 +157,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="section-label">The People</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#1B2563] mb-3">Meet the Team</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#111111] mb-3">Meet the Team</h2>
             <div className="accent-line mx-auto" />
             <p className="text-gray-500 text-sm">Small team, big results</p>
           </div>
@@ -170,7 +170,7 @@ export default function AboutPage() {
                   style={{ background: "linear-gradient(135deg, #9b51e0, #6b3fa0)" }}>
                   {m.initials}
                 </div>
-                <h3 className="font-bold text-sm text-[#1B2563] mb-1">{m.name}</h3>
+                <h3 className="font-bold text-sm text-[#111111] mb-1">{m.name}</h3>
                 <p className="text-[#C9A84C] text-xs font-bold mb-3">{m.role}</p>
                 <p className="text-gray-500 text-xs leading-relaxed">{m.bio}</p>
               </div>

@@ -73,7 +73,7 @@ export default function FAQSection({ faqs = defaultFaqs, light = false }) {
                           : "text-white group-hover:text-[#C9A84C]"
                         : isOpen
                         ? "text-[#4F46E5]"
-                        : "text-[#1B2563] group-hover:text-[#4F46E5]"
+                        : "text-[#111111] group-hover:text-[#4F46E5]"
                     }`}
                     style={{ fontFamily: "'Poppins', sans-serif" }}
                   >
@@ -89,7 +89,7 @@ export default function FAQSection({ faqs = defaultFaqs, light = false }) {
                     }`}
                   >
                     <svg
-                      className={`w-3.5 h-3.5 transition-colors ${isOpen ? "text-[#1B2563]" : light ? "text-white" : "text-gray-500"}`}
+                      className={`w-3.5 h-3.5 transition-colors ${isOpen ? "text-[#111111]" : light ? "text-white" : "text-gray-500"}`}
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"

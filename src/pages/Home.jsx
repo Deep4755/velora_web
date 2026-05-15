@@ -34,7 +34,7 @@ function HeroForm() {
       <div className="flex items-center gap-2.5 mb-1">
         <div className="w-2.5 h-2.5 rounded-full bg-[#C9A84C]" />
         <h3
-          className="text-[#1B2D63] font-bold text-xl"
+          className="text-[#111111] font-bold text-xl"
           style={{ fontFamily: "'Poppins', sans-serif" }}
         >
           GET IN TOUCH
@@ -50,7 +50,7 @@ function HeroForm() {
           >
             ✅
           </div>
-          <p className="text-[#1B2D63] font-bold text-lg mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
+          <p className="text-[#111111] font-bold text-lg mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
             Thank you!
           </p>
           <p className="text-gray-500 text-base">We will contact you soon.</p>
@@ -276,7 +276,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3
-                      className="font-semibold text-base text-[#1B2D63] mb-1.5"
+                      className="font-semibold text-base text-[#111111] mb-1.5"
                       style={{ fontFamily: "'Poppins', sans-serif" }}
                     >
                       {c.title}
@@ -327,7 +327,7 @@ export default function Home() {
                   {s.icon}
                 </div>
                 <h3
-                  className="font-semibold text-lg text-[#1B2D63] mb-2"
+                  className="font-semibold text-lg text-[#111111] mb-2"
                   style={{ fontFamily: "'Poppins', sans-serif" }}
                 >
                   {s.title}
@@ -379,12 +379,12 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
                   </div>
-                  <span className="text-[#1B2D63]/30 text-sm font-medium">Project Screenshot</span>
+                  <span className="text-[#111111]/30 text-sm font-medium">Project Screenshot</span>
                 </div>
                 <div className="p-6">
                   <p className="text-[#C9A84C] text-xs font-bold mb-1.5 uppercase tracking-wider">{p.category}</p>
                   <h3
-                    className="font-semibold text-base text-[#1B2D63] mb-4"
+                    className="font-semibold text-base text-[#111111] mb-4"
                     style={{ fontFamily: "'Poppins', sans-serif" }}
                   >
                     {p.title}
@@ -442,7 +442,7 @@ export default function Home() {
                   </span>
                 )}
                 <p
-                  className={`font-semibold text-base mb-2 ${p.popular ? "text-white/70" : "text-[#1B2D63]"}`}
+                  className={`font-semibold text-base mb-2 ${p.popular ? "text-white/70" : "text-[#111111]"}`}
                   style={{ fontFamily: "'Poppins', sans-serif" }}
                 >
                   {p.name}
@@ -458,7 +458,7 @@ export default function Home() {
                   to="/pricing"
                   className={`text-sm font-semibold px-6 py-2.5 rounded-lg border-2 transition-all inline-block ${
                     p.popular
-                      ? "border-[#C9A84C] text-[#C9A84C] hover:bg-[#C9A84C] hover:text-[#1B2563]"
+                      ? "border-[#C9A84C] text-[#C9A84C] hover:bg-[#C9A84C] hover:text-[#111111]"
                       : "border-[#4F46E5] text-[#4F46E5] hover:bg-[#4F46E5] hover:text-white"
                   }`}
                 >
@@ -511,7 +511,7 @@ export default function Home() {
                   </div>
                   <div>
                     <p
-                      className="font-semibold text-base text-[#1B2D63]"
+                      className="font-semibold text-base text-[#111111]"
                       style={{ fontFamily: "'Poppins', sans-serif" }}
                     >
                       {t.name}

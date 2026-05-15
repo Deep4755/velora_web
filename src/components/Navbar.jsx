@@ -39,7 +39,7 @@ export default function Navbar() {
             </div>
             <div className="flex flex-col leading-tight">
               <span
-                className="font-black text-[#1B2563] text-xl tracking-wide"
+                className="font-black text-[#111111] text-xl tracking-wide"
                 style={{ fontFamily: "'Poppins', sans-serif" }}
               >
                 AGENCY
@@ -64,7 +64,7 @@ export default function Navbar() {
                   `px-4 py-2.5 rounded-lg text-base font-medium transition-all duration-200 ${
                     isActive
                       ? "text-[#4F46E5] font-semibold"
-                      : "text-gray-600 hover:text-[#1B2563]"
+                      : "text-gray-600 hover:text-[#111111]"
                   }`
                 }
                 style={{ fontFamily: "'Inter', sans-serif" }}
@@ -82,7 +82,7 @@ export default function Navbar() {
 
           {/* ── Mobile toggle ── */}
           <button
-            className="lg:hidden p-2.5 rounded-xl text-gray-500 hover:text-[#1B2563] hover:bg-gray-100 transition-colors"
+            className="lg:hidden p-2.5 rounded-xl text-gray-500 hover:text-[#111111] hover:bg-gray-100 transition-colors"
             onClick={() => setOpen(!open)}
             aria-label="Toggle menu"
           >
@@ -112,7 +112,7 @@ export default function Navbar() {
                 `px-4 py-3 rounded-xl text-base font-medium transition-colors ${
                   isActive
                     ? "text-[#4F46E5] font-semibold bg-indigo-50"
-                    : "text-gray-600 hover:text-[#1B2563] hover:bg-gray-50"
+                    : "text-gray-600 hover:text-[#111111] hover:bg-gray-50"
                 }`
               }
               style={{ fontFamily: "'Inter', sans-serif" }}

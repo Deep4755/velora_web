@@ -52,13 +52,13 @@ export default function ContactPage() {
                   <form onSubmit={submit} className="space-y-5">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                       <div>
-                        <label className="text-sm font-semibold text-[#1B2D63] block mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                        <label className="text-sm font-semibold text-[#111111] block mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
                           Name <span className="text-red-400">*</span>
                         </label>
                         <input type="text" name="name" value={form.name} onChange={handle} placeholder="Your full name" required className="input-field" />
                       </div>
                       <div>
-                        <label className="text-sm font-semibold text-[#1B2D63] block mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                        <label className="text-sm font-semibold text-[#111111] block mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
                           Email <span className="text-red-400">*</span>
                         </label>
                         <input type="email" name="email" value={form.email} onChange={handle} placeholder="your@email.com" required className="input-field" />
@@ -66,16 +66,16 @@ export default function ContactPage() {
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                       <div>
-                        <label className="text-sm font-semibold text-[#1B2D63] block mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>Phone</label>
+                        <label className="text-sm font-semibold text-[#111111] block mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>Phone</label>
                         <input type="tel" name="phone" value={form.phone} onChange={handle} placeholder="+44 ..." className="input-field" />
                       </div>
                       <div>
-                        <label className="text-sm font-semibold text-[#1B2D63] block mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>Company</label>
+                        <label className="text-sm font-semibold text-[#111111] block mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>Company</label>
                         <input type="text" name="company" value={form.company} onChange={handle} placeholder="Your company name" className="input-field" />
                       </div>
                     </div>
                     <div>
-                      <label className="text-sm font-semibold text-[#1B2D63] block mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                      <label className="text-sm font-semibold text-[#111111] block mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
                         Project Type <span className="text-red-400">*</span>
                       </label>
                       <select name="projectType" value={form.projectType} onChange={handle} className="input-field">
@@ -89,7 +89,7 @@ export default function ContactPage() {
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                       <div>
-                        <label className="text-sm font-semibold text-[#1B2D63] block mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>Budget</label>
+                        <label className="text-sm font-semibold text-[#111111] block mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>Budget</label>
                         <select name="budget" value={form.budget} onChange={handle} className="input-field">
                           <option>£150 - £300</option>
                           <option>£300 - £800</option>
@@ -99,7 +99,7 @@ export default function ContactPage() {
                         </select>
                       </div>
                       <div>
-                        <label className="text-sm font-semibold text-[#1B2D63] block mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>Timeline</label>
+                        <label className="text-sm font-semibold text-[#111111] block mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>Timeline</label>
                         <select name="timeline" value={form.timeline} onChange={handle} className="input-field">
                           <option>As soon as possible</option>
                           <option>Within 2 weeks</option>
@@ -109,7 +109,7 @@ export default function ContactPage() {
                       </div>
                     </div>
                     <div>
-                      <label className="text-sm font-semibold text-[#1B2D63] block mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                      <label className="text-sm font-semibold text-[#111111] block mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
                         Message <span className="text-red-400">*</span>
                       </label>
                       <textarea
@@ -133,8 +133,8 @@ export default function ContactPage() {
             {/* Info sidebar */}
             <div className="lg:col-span-2 flex flex-col gap-5">
               {[
-                { icon: "✉️", label: "Email", value: "hello@agency.co.uk", sub: "We reply within 24 hours", href: "mailto:hello@agency.co.uk", gradient: "linear-gradient(135deg, #1B2D63, #1B2563)" },
-                { icon: "📞", label: "Phone", value: "+44 20 1234 5678", sub: "Mon–Fri 9am–6pm GMT", href: "tel:+442012345678", gradient: "linear-gradient(135deg, #C9A84C, #E8C96A)" },
+                { icon: "✉️", label: "Email", value: "veloraweb00@gmail.com", sub: "We reply within 24 hours", href: "mailto:veloraweb00@gmail.com", gradient: "linear-gradient(135deg, #1B2D63, #1B2563)" },
+                { icon: "📞", label: "Phone", value: "07345 102502", sub: "Mon–Fri 9am–6pm GMT", href: "tel:+447345102502", gradient: "linear-gradient(135deg, #C9A84C, #E8C96A)" },
                 { icon: "📍", label: "Location", value: "London, United Kingdom", sub: "Remote & on-site meetings", href: null, gradient: "linear-gradient(135deg, #4F46E5, #6366f1)" },
               ].map((info, i) => (
                 <div key={i} className="bg-white rounded-2xl p-6 border border-gray-200 flex items-start gap-5 shadow-sm card-hover">
@@ -142,7 +142,7 @@ export default function ContactPage() {
                     {info.icon}
                   </div>
                   <div>
-                    <p className="font-semibold text-base text-[#1B2D63] mb-1" style={{ fontFamily: "'Poppins', sans-serif" }}>{info.label}</p>
+                    <p className="font-semibold text-base text-[#111111] mb-1" style={{ fontFamily: "'Poppins', sans-serif" }}>{info.label}</p>
                     {info.href
                       ? <a href={info.href} className="text-base font-medium text-[#4F46E5] hover:underline">{info.value}</a>
                       : <p className="text-base font-medium text-[#4F46E5]">{info.value}</p>
@@ -160,12 +160,12 @@ export default function ContactPage() {
               </div>
 
               <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
-                <p className="font-semibold text-base text-[#1B2D63] mb-5" style={{ fontFamily: "'Poppins', sans-serif" }}>What Happens Next?</p>
+                <p className="font-semibold text-base text-[#111111] mb-5" style={{ fontFamily: "'Poppins', sans-serif" }}>What Happens Next?</p>
                 <ul className="space-y-4">
                   {["We review your project details", "We send you a free quote within 24h", "We schedule a discovery call", "We start building your website"].map((step, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <span
-                        className="w-6 h-6 rounded-full text-[#1B2563] text-xs font-bold flex items-center justify-center shrink-0 mt-0.5"
+                        className="w-6 h-6 rounded-full text-[#111111] text-xs font-bold flex items-center justify-center shrink-0 mt-0.5"
                         style={{ background: "linear-gradient(135deg, #C9A84C, #E8C96A)" }}
                       >
                         {i + 1}
