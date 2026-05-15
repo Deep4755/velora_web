@@ -7,9 +7,9 @@ const filters = ["All", "Landing Pages", "Business Websites", "Ecommerce"];
 const tagMap = { All: null, "Landing Pages": "landing", "Business Websites": "business", Ecommerce: "ecommerce" };
 
 const allProjects = [
-  { id: 1, title: "Developer Portfolio", category: "Landing Page", tag: "landing", gradient: "from-gray-900 to-gray-800", liveUrl: "https://codebydeep-co-uk-913554.hostingersite.com/" },
-  { id: 2, title: "Local Carpet Fitter", category: "Business Website", tag: "business", gradient: "from-amber-50 to-orange-100", liveUrl: "https://localcarpetfitter.co.uk/" },
-  { id: 3, title: "QuickBreak", category: "Landing Page", tag: "landing", gradient: "from-emerald-50 to-teal-100", liveUrl: "https://quick-break-backend.onrender.com/" },
+  { id: 1, title: "Developer Portfolio", category: "Landing Page", tag: "landing", gradient: "from-gray-900 to-gray-800", liveUrl: "https://codebydeep-co-uk-913554.hostingersite.com/", image: "/images/image.png" },
+  { id: 2, title: "Local Carpet Fitter", category: "Business Website", tag: "business", gradient: "from-amber-50 to-orange-100", liveUrl: "https://localcarpetfitter.co.uk/", image: "/images/image1.png" },
+  { id: 3, title: "QuickBreak", category: "Landing Page", tag: "landing", gradient: "from-emerald-50 to-teal-100", liveUrl: "https://quick-break-backend.onrender.com/", image: "/images/image2.png" },
   { id: 4, title: "Fashion Boutique", category: "Ecommerce", tag: "ecommerce", gradient: "from-rose-50 to-pink-100", liveUrl: null },
   { id: 5, title: "SaaS Landing Page", category: "Landing Page", tag: "landing", gradient: "from-blue-50 to-indigo-100", liveUrl: null },
   { id: 6, title: "Fitness Studio", category: "Business Website", tag: "business", gradient: "from-emerald-50 to-teal-100", liveUrl: null },
@@ -115,14 +115,20 @@ export default function PortfolioPage() {
             {filtered.map(project => (
               <StaggerItem key={project.id}>
               <div className="rounded-2xl overflow-hidden border border-gray-100 card-hover bg-white shadow-sm">
-                <div className={`h-52 bg-gradient-to-br ${project.gradient} flex flex-col items-center justify-center gap-2`}>
-                  <div className="w-12 h-12 rounded-xl bg-white/70 flex items-center justify-center shadow-sm">
-                    <svg className="w-6 h-6 text-[#4F46E5]/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
+                {project.image ? (
+                  <div className="h-52 overflow-hidden">
+                    <img src={project.image} alt={project.title} className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
                   </div>
-                  <span className="text-[#111111]/30 text-sm font-medium">Project Screenshot</span>
-                </div>
+                ) : (
+                  <div className={`h-52 bg-gradient-to-br ${project.gradient} flex flex-col items-center justify-center gap-2`}>
+                    <div className="w-12 h-12 rounded-xl bg-white/70 flex items-center justify-center shadow-sm">
+                      <svg className="w-6 h-6 text-[#4F46E5]/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                      </svg>
+                    </div>
+                    <span className="text-[#111111]/30 text-sm font-medium">Coming Soon</span>
+                  </div>
+                )}
                 <div className="p-6">
                   <p className="text-[#C9A84C] text-xs font-bold mb-1.5 uppercase tracking-wider">{project.category}</p>
                   <h3 className="font-semibold text-base text-[#111111] mb-4" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{project.title}</h3>
